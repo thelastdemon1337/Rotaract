@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- There's bug in the below jquery code.. will deal with it later.. Will spend time on hp things for now! -->
+    <!-- <script
+        src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            if($(this).scrollTop()>780){
+                $('.menu').addClass("T_Nav_idea");
+            } else{
+                $('.menu').removeClass("T_Nav_idea");
+            }
+        })
+    </script> -->
+    <title>ROTARACT | 2021</title>
+</head>
+<body>
+    <div class="banner">
+            <h1 class="text t1">ROTARACT</h1>
+            <h1 class="text t2">CLUB OF</h1>
+            <h1 class="text t3" id="text123">KGRCET (2021-22)</h1>
+        <div class="clouds">
+            <img src="Heaven_Assets/cloud1.png " style="--i:1;">
+            <img src="Heaven_Assets/cloud2.png " style="--i:2;">
+            <img src="Heaven_Assets/cloud3.png " style="--i:3;">
+            <img src="Heaven_Assets/cloud4.png " style="--i:4;">
+            <img src="Heaven_Assets/cloud5.png " style="--i:5;">
+            <img src="Heaven_Assets/cloud1.png " style="--i:10;">
+            <img src="Heaven_Assets/cloud2.png " style="--i:9;">
+            <img src="Heaven_Assets/cloud3.png " style="--i:8;">
+            <img src="Heaven_Assets/cloud4.png " style="--i:7;">
+            <img src="Heaven_Assets/cloud5.png " style="--i:6;">
+        </div>
+    </div>
+    <section>
+        <nav class="menu">
+            <div class="brand">
+                <h2>ROTARACT</h2>
+            </div>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Avenues</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <h2 class="category">AVENUES</h2>
+    </section>
+    <script type="text/javascript">
+    // &Damn.. This parallax isn't working too.. get back to this some other time..
+        let text = document.getElementsById('text123');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            text.style.marginBottom = value * 1 + 'px';
+        })
+
+    </script>
+</body>
+</html>

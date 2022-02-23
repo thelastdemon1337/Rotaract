@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face {
+    font-family: tarun;
+    src: url(Fonts/WizardWorldSimplified-Kxr7.ttf);
+}
+@font-face {
+    font-family: tarun1;
+    src: url(Fonts/AnimalesFantastic-lGly.ttf);
+}
+@font-face {
+    font-family: tarun2;
+    src: url(Fonts/HarryPotter-ov4z.ttf);
+}
+@font-face {
+    font-family: tarun3;
+    src: url(Fonts/Parseltongue-GOnG.ttf);
+}
+@font-face {
+    font-family: monster;
+    src: url(Fonts/MonsterAg-MADn.ttf);
+}
+@font-face {
+    font-family: azonix;
+    src: url(Fonts/Azonix-1VB0.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Heaven_Assets/perfect.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+    justify-content: space-between;
+}
+nav .brand{
+    margin: 0px 30px;
+    color: black;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 8px 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 30px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover{
+    background: #1b1b1b;
+    color: #fff;
+}
+.text{
+    position: absolute;
+    font-family: tarun1;
+    color: #fff;
+}
+.t1{
+    top: 20%;
+    font-size: 7em;
+}
+.t2{
+    font-family: tarun1;
+    font-size: 3em;
+    top: 39%;
+}
+.t3{
+    font-family: tarun1;
+    font-size: 4em;
+    top: 48%;
+}
+.banner .clouds{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+.banner .clouds img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(3s * var(--i)) linear infinite;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    25%,75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+section{
+    position: relative;
+    padding: 75px 100px;
+}
+section h2{
+    position: relative;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.category{
+    display: flex;
+    justify-content: center;
+}
+/* .T_Nav_idea{
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
